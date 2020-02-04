@@ -10,7 +10,7 @@ except IndexError as err:
 	print('Please enter the source folder name and result folder name.')
 	raise err
 
-# check if new/ exist, if not create
+# check if result folder exists, if not create one
 if os.path.isdir(result):
 	print(f'The images are going to be converted into PNG in {result}')
 else:
