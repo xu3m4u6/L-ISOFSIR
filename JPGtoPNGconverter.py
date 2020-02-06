@@ -6,6 +6,10 @@ from PIL import Image
 try:
 	source_folder = sys.argv[1]
 	result_folder = sys.argv[2]
+	if '/' not in source_folder:
+		source_folder = source_folder+'/'
+	if '/' not in result_folder:
+		result_folder = result_folder+'/'
 except IndexError as err:
 	print('Please enter the source folder name and result folder name.')
 	raise err
