@@ -12,10 +12,10 @@ except IndexError as err:
 
 # check if result folder exists, if not create one
 if os.path.isdir(result_folder):
-	print(f'The images are going to be converted into PNG in {result_folder}')
+	print(f'The images are going to be converted into PNG in {result_folder}, please wait.')
 else:
 	os.mkdir(result_folder)
-	print(f'A New folder {result_folder} has been created to save the converted images.')
+	print(f'A New folder {result_folder} has been created to save the converted images, please wait.')
 
 # loop through pokedex, convert images into png, save to the new folder
 for file in os.listdir(source_folder):
