@@ -20,9 +20,9 @@ else:
 # loop through pokedex, convert images into png, save to the new folder
 for file in os.listdir(source_folder):
 	if file.endswith(".jpg"):
-		img = Image.open(source_folder + file)
+		img = Image.open(f'{source_folder}{file}')
 		clean_name = os.path.splitext(file)[0]
 		img.save(f'{result_folder}{clean_name}.png','png')
 
-print('All of the JPG images have been converted! Go check for it!')
+print('All of the JPG images have been converted!')
 
