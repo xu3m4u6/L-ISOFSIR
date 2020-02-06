@@ -17,9 +17,7 @@ else:
 	os.mkdir(result_folder)
 	print(f'A New folder {result_folder} has been created to save the converted images.')
 
-# loop through pokedex
-# convert images into png
-# save to the new folder
+# loop through pokedex, convert images into png, save to the new folder
 for file in os.listdir(source_folder):
 	if file.endswith(".jpg"):
 		img = Image.open(source_folder + file)
