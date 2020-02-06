@@ -8,7 +8,6 @@ Put all the JPG images in one folder(source folder).
 step2:
 Run the script in terminal.
 Remember to add the source_folder_name/ and result_folder_name/ at the end of the command and separate with a blank space.
-For example: Python3 JPGtoPNGconverter.py source/ new/
+For example: -> Python3 JPGtoPNGconverter.py source/ new/
 
-step3:
-Get a new folder with all the images converted into PNG. 
+After step1 and step2, you will get a new folder with all the images converted into PNG. 
